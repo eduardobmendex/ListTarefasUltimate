@@ -20,7 +20,7 @@ const TaskModal = ({ isVisible, onClose, onAddTask, taskToEdit, onEditTask }) =>
     }
     setTask('');
     onClose();
-    alert("Tarefa salva!")
+    alert("Edição concluída!")
   };
 
   return (
