@@ -52,14 +52,14 @@ const styles = StyleSheet.create({
     paddingBottom: 20,
   },
   taskItem: {
-    backgroundColor: '#4CAF50',
+    backgroundColor: 'white',
     padding: 15,
     borderRadius: 10,
     marginBottom: 10,
     elevation: 2,
   },
   taskText: {
-    color: '#fff',
+    color: 'black',
     fontSize: 16,
   },
   removeButton: {
