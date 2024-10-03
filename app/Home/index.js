@@ -9,7 +9,7 @@ const STORAGE_KEY = '@tasks';
 
 const Home = () => {
   const [tasks, setTasks] = useState([]);
-  const [newTaskText, setNewTaskText] = useState(""); // Novo estado para armazenar o texto da nova tarefa
+  const [newTaskText, setNewTaskText] = useState("");  
   const [isModalVisible, setModalVisible] = useState(false);
   const [taskToEdit, setTaskToEdit] = useState(null);
   const [username, setUsername] = useState("");
@@ -67,14 +67,14 @@ const Home = () => {
 
     const newTasks = [...tasks, {
       id: Date.now().toString(),
-      text: newTaskText, // Usa o texto do campo de input
+      text: newTaskText,  
       completed: false,
       creationDate: new Date().toISOString()
     }];
 
     setTasks(newTasks);
     saveTasks(newTasks);
-    setNewTaskText(""); // Limpa o campo de input após a adição
+    setNewTaskText("");  
   };
 
   const toggleTaskCompletion = (id) => {
@@ -164,19 +164,19 @@ const styles = StyleSheet.create({
   },
   containerText: {
     justifyContent: 'center',
-    alignItems: 'center', // Centraliza horizontalmente
+    alignItems: 'center',  
     backgroundColor: '#f0f0f0',
-    marginBottom: 20, // Espaçamento abaixo do texto (opcional)
-    width: '100%', // Faz a largura ocupar o máximo disponível
+    marginBottom: 20,  
+    width: '100%', 
   },
 
   contentSave: {
     display: 'flex',
-    flexDirection: 'row', // Coloca o input e o botão em linha
+    flexDirection: 'row', 
     width: '100%', 
     justifyContent: 'center',
-    alignItems: 'center', // Alinha os itens verticalmente
-    backgroundColor: '#fff', // Agora o background-color será aplicado
+    alignItems: 'center', 
+    backgroundColor: '#fff',  
     padding:5,
     borderRadius:10
   },
@@ -205,14 +205,14 @@ const styles = StyleSheet.create({
     elevation: 5,
   },
   input: {
-    flex: 1, // O input vai ocupar o espaço disponível
+    flex: 1,  
     borderColor: 'transparent',
     borderWidth: 1,
     padding: 10,
     marginBottom: 10,
     borderRadius: 5,
     backgroundColor: '#fff',
-    marginRight: 10, // Adiciona espaço entre o input e o botão
+    marginRight: 10, 
   },
   summaryText: {
     color: '#fff',
@@ -233,8 +233,8 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     alignItems: 'center',
     justifyContent: 'center',
-    width: 100, // Define uma largura fixa para o botão
-    height: 50, // Define uma altura fixa para o botão
+    width: 100, 
+    height: 50,  
   },
   addButtonText: {
     color: '#fff',
@@ -245,7 +245,7 @@ const styles = StyleSheet.create({
     marginTop: 20,
     fontSize: 18,
     color: '#333',
-    textAlign: 'center', // Garante que o texto seja centralizado
+    textAlign: 'center', 
   },
   
 });
